@@ -1,0 +1,53 @@
+//bar graph
+import matplotlib.pyplot as plt
+subjects=["Python","Java","C","C++"]
+marks=[85,75,65,80]
+plt.bar(subjects,marks)
+plt.title("Student Marks")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+//line graph
+import matplotlib.pyplot as plt
+months=["Jan","Feb","Mar","Apr","May"]
+sales=[10,15,12,18,20]
+plt.plot(months,sales,marker='o')
+plt.title("Monthly Sales")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+plt.show()
+
+//pie chart
+import matplotlib.pyplot as plt
+labels=["Python","Java","C++","C"]
+sizes=[40,30,20,10]
+plt.pie(sizes,labels=labels,autopct='%1.1f%%')
+plt.title("Programming Language Usage")
+plt.show()
+
+//scatter plot
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5]
+y=[2,4,5,4,5]
+plt.scatter(x,y)
+plt.title("Scatter Plot")
+plt.xlabel("X Values")
+plt.ylabel("Y Values")
+plt.show()
+
+//histograph
+import matplotlib.pyplot as plt
+marks=[55,60,65,70,75,80,85,90,95]
+plt.hist(marks,bins=5)
+plt.title("Student Marks Distribution")
+plt.xlabel("Marks")
+plt.ylabel("Frequency")
+plt.show()
+// box plot
+import matplotlib.pyplot as plt
+data=[15,18,20,22,24,25,28,30,32]
+plt.boxplot(data)
+plt.title("Box Plot")
+plt.show() 
+  
