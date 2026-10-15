@@ -1,0 +1,60 @@
+/*Aim:
+To study various data visualization tools and display the installed versions of commonly used Python
+visualization libraries.
+Description
+Data visualization is the process of representing data in graphical form such as charts, graphs, plots
+and dashboards. Visualization tools make complex datasets easier to understand and help users
+identify trends, patterns and relationships. Common tools used in this laboratory are Matplotlib,
+Seaborn, Plotly, Pandas, R and Tableau.
+Uses
+• To understand large and complex datasets easily.
+• To identify trends, patterns and relationships.
+• To communicate analytical results effectively.
+• To create charts, graphs and interactive visualizations.
+• To support data-driven decision making.
+Algorithm
+1. Import the required visualization libraries.
+2. Display the version of each library.
+3. Execute the program.
+4. Observe the output.
+*/
+Program
+ import matplotlib
+ import seaborn
+ import plotly
+ import pandas
+
+print("Matplotlib:", matplotlib.__version__)
+ print("Seaborn:", seaborn.__version__)
+print("Plotly:", plotly.__version__)
+print("Pandas:", pandas.__version__)
+
+
+
+/*Data Visualization Laboratory CSE Department
+
+Program Explanation
+• import matplotlib loads the Matplotlib library.
+• import seaborn loads Seaborn for statistical visualization.
+• import plotly loads Plotly for interactive visualization.
+• import pandas loads Pandas for data handling.
+• version displays the installed version of each library.
+
+Libraries Used and Their Uses
+
+Table 1: Commonly Used Python Visualization Libraries
+
+Library Use
+Matplotlib Creates line charts, bar charts, scatter plots and other
+
+graphs.
+
+Seaborn Creates attractive statistical and analytical visualiza-
+tions.
+
+Plotly Creates interactive charts and dashboards.
+Pandas Loads, cleans, transforms and analyzes tabular data.
+
+Result
+
+Thus, the versions of the commonly used Python data visualization libraries were displayed successfully
