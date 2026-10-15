@@ -1,3 +1,10 @@
+//Aim:various data visualization tools and display the common used python visualization libraries
+/*Algorithm:
+1.import the required visualization library 
+2.display the versions of each libraries 
+3.execute the program
+4.observe the output*/
+//program
 import matplotlib.pyplot as plt
 
 # Sample data
@@ -17,4 +24,21 @@ plt.legend()
 plt.grid(True)
 
 # Display the graph
-plt.show()
+plt.show()  
+
+/*Applications of matplolib:
+1.data analysis 
+2.scientific research 
+3. machine learning
+4.business reports 
+libraries used:
+plt.plot() 
+plt.title()
+plt.ylabel()
+plt.legend()
+Results:
+The above program is successfully executed
+
+
+
+
