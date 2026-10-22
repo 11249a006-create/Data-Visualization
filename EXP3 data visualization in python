@@ -1,3 +1,12 @@
+//Aim
+//To create and understand different basic graphs and visualizations using R programming.
+/*Algorithm
+1. Create the required R vectors.
+2. Select a suitable visualization function.
+3. Pass the data to the graph function.
+4. Add title and axis labels.
+5. Execute the R program.
+6. Observe and interpret the graph.*/
 //bar graph
 import matplotlib.pyplot as plt
 subjects=["Python","Java","C","C++"]
@@ -50,4 +59,6 @@ data=[15,18,20,22,24,25,28,30,32]
 plt.boxplot(data)
 plt.title("Box Plot")
 plt.show() 
-  
+//Result:
+//Thus, five basic visualizations—line graph, bar chart, pie chart, scatter plot and histogram—were
+successfully created using R programming.
