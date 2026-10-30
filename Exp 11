@@ -1,0 +1,45 @@
+//Aim
+//To create a story in Tableau by combining multiple visualizations into a sequence of insights.
+/*Algorithm
+1. Open Tableau Public.
+2. Connect to the dataset.
+3. Create multiple worksheets.
+4. Create a dashboard if required.
+5. Open the Story tab.
+6. Add story points.
+7. Arrange visualizations sequentially.
+8. Add captions for explanation.
+9. Analyze and save the story.*/
+//Program:
+import pandas as pd
+ import matplotlib.pyplot as plt
+ # Load dataset
+ data = pd.read_csv("sales_data.csv")
+
+ # STORY STEP 1: Category performance
+category_sales = data.groupby("Category")["Sales"].sum()
+ category_sales.plot(kind="bar")
+ plt.title("Story 1: Sales by Category")
+ plt.xlabel("Category")
+ plt.ylabel("Total Sales")
+ plt.show()
+ # STORY STEP 2: Regional contribution
+region_sales = data.groupby("Region")["Sales"].sum()
+region_sales.plot(kind="pie", autopct="%1.1f%%")
+ plt.title("Story 2: Sales by Region")
+ plt.ylabel("")
+plt.show()
+# STORY STEP 3: Quantity and sales relationship
+ plt.scatter(data["Quantity"], data["Sales"])
+ plt.title("Story 3: Sales vs Quantity")
+ plt.xlabel("Quantity")
+ plt.ylabel("Sales")
+ plt.show()
+ # Story conclusion
+ print("Story Created: Category performance, "
+ "regional distribution, and sales trends analyzed.")
+// Output
+//Three story views are displayed: sales by category, sales by region, and the relationship between
+quantity and sales.
+//Result
+//Thus, storytelling was successfully implemented in Tableau to present data insights effectively.
