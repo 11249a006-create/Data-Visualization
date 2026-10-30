@@ -28,5 +28,8 @@ plt.title("Category Distribution")
  plt.xlabel("Quantity")
  plt.ylabel("Sales")
  plt.show()
+// Output
+//Three visualizations are displayed: sales by category as a bar chart, category distribution as a pie
+//chart, and Sales versus Quantity as a line chart.
 //Result
 //Thus, various charts, graphs, and maps were successfully created using Tableau.
