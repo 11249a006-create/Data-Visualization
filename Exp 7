@@ -24,5 +24,8 @@ Data Visualization Laboratory CSE Department
 # Group by Category
  print("\nSales by Category:")
  print(data.groupby("Category")["Sales"].sum())
+// Output
+A scatter plot of Sales versus Quantity is displayed. The same fields can be used in Tableau for
+map-based and geographical analysis.
 //Result:Result
 Thus, data aggregation and statistical analysis were successfully performed using Tableau.
