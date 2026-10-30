@@ -1,0 +1,37 @@
+//Aim
+//To create basic dashboards in Tableau by combining multiple visualizations.
+/*Algorithm
+1. Open Tableau Public.
+2. Connect to the dataset.
+3. Create multiple worksheets.
+4. Open the Dashboard tab.
+5. Drag sheets into the dashboard.
+6. Add filters and interactive elements.
+7. Arrange the layout properly.
+8. Save the dashboard.*/
+//program:
+import pandas as pd
+import matplotlib.pyplot as plt
+ # Load dataset
+ data = pd.read_csv("sales_data.csv")
+ # Bar chart
+ data.groupby("Category")["Sales"].sum().plot(kind="bar")
+ plt.title("Sales by Category")
+ plt.show()
+ # Pie chart
+ data.groupby("Region")["Sales"].sum().plot(
+ kind="pie", autopct="%1.1f%%")
+ plt.title("Sales by Region")
+plt.show()
+ # Line chart
+ plt.plot(data["Quantity"], data["Sales"])
+ plt.title("Sales vs Quantity")
+ plt.xlabel("Quantity")
+ plt.ylabel("Sales")
+plt.show()
+/* Output
+The program produces three analytical views which can be combined in Tableau into a single inter-
+active dashboard.8/
+
+//Result
+//Thus, a basic dashboard was successfully created in Tableau using multiple visualizations.
