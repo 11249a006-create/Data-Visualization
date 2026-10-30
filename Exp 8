@@ -1,0 +1,32 @@
+//Aim
+//To create various charts, graphs, and data maps using Tableau for effective data visualization.
+/*Algorithm
+1. Open Tableau Public.
+2. Connect to the dataset.
+3. Drag required fields to Rows and Columns.
+4. Select an appropriate chart type.
+5. Customize the visualization.
+6. Analyze and save the visualization.*/
+//program:
+import pandas as pd
+ import matplotlib.pyplot as plt
+ # Load dataset
+data = pd.read_csv("sales_data.csv")
+ # Bar Chart
+ data.groupby("Category")["Sales"].sum().plot(kind="bar")
+ plt.title("Sales by Category")
+ plt.show()
+# Pie Chart
+data.groupby("Category")["Sales"].sum().plot(
+ kind="pie", autopct="%1.1f%%")
+plt.title("Category Distribution")
+ plt.show()
+
+# Line Chart
+ plt.plot(data["Quantity"], data["Sales"])
+ plt.title("Sales vs Quantity")
+ plt.xlabel("Quantity")
+ plt.ylabel("Sales")
+ plt.show()
+//Result
+//Thus, various charts, graphs, and maps were successfully created using Tableau.
