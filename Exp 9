@@ -26,6 +26,9 @@ print("Average Sales:", data["Sales"].mean())
 Group by Category
 print("\nSales by Category:")
 print(data.groupby("Category")["Sales"].sum())
+// Output
+The output displays total sales, average sales, minimum sales, maximum sales and sales grouped
+by category.
 //Result
 //Thus, data aggregation and statistical analysis were successfully performed using Tableau.
 
